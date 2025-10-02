@@ -14,6 +14,7 @@ public class TestStatistics {
 
         for (int i = 0 ; i < scores.length ; i++){
 
+
             if (scores[i] > highscore){
                 highscore = scores[i];
             }
@@ -22,20 +23,18 @@ public class TestStatistics {
                 lowscore = scores[i];
             }
 
-            for (int a = 0 ; a < scores.length ; a++){
-               sum += scores[a];
 
-                double average = (double) sum / scores.length;
-
+            sum += scores[i];
 
 
             }
+        int average = sum / scores.length;
 
 
 
             System.out.println("High Score: " + highscore);
             System.out.println("Low Score: " + lowscore);
-            System.out.println("Average: " + sum);
+            System.out.println("Average: " + average);
 
 
 
@@ -62,4 +61,4 @@ public class TestStatistics {
 
 
 
-}
+
